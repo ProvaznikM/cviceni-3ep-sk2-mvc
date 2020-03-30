@@ -4,7 +4,7 @@
         foreach($prispevky as $prispevek)
         {
             echo "<li><a href=?c=prispevky&a=detail&id=" . $prispevek->id . ">"
-                 . $prispevek->nadpis . "</a></li>";
+                 . $prispevek->nadpis . "</a> <a href=?c=prispevky&a=smazat&id=" . $prispevek->id . ">smazat</a></li>";
         }
     ?>
 </ul>

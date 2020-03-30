@@ -42,4 +42,20 @@ class PrispevkyController
 
         require_once "viewy/prispevky/prehled.php";
     }
+
+    public function upravit()
+    {
+        $id = $_GET["id"];
+        $prispevek = Prispevek::nacist($id);
+
+        require_once "viewy/prispevky/upravit.php";
+    }
+    
+    public function smazat()
+    {
+        $id = $_GET["id"];
+        $prispevek = Prispevek::nacist($id);
+
+        require_once "viewy/prispevky/smazat.php";
+    }
 }
